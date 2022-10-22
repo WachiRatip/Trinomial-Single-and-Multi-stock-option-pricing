@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1652004731 source:h:\cpp_spring_week3\project2\main.cpp
+	<iostream>
+	"ReadCSVFile.h"
+	"TriPath.h"
+	"PathDependentOptions.h"
+
+1651994214 h:\cpp_spring_week3\project2\readcsvfile.h
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+
+1651996535 source:h:\cpp_spring_week3\project2\readcsvfile.cpp
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+	<iostream>
+	"ReadCSVFile.h"
+
+1651854527 source:h:\cpp_spring_week3\project2\pathdependentoptions.cpp
+	<cmath>
+	"PathDependentOptions.h"
+
+1652006516 h:\cpp_spring_week3\project2\pathdependentoptions.h
+	"TriPath.h"
+
+1652004971 h:\cpp_spring_week3\project2\tripath.h
+	"TriModel.h"
+
+1652004651 h:\cpp_spring_week3\project2\trimodel.h
+
+1652004538 source:h:\cpp_spring_week3\project2\trimodel.cpp
+	<cmath>
+	"TriModel.h"
+
+1652005785 source:h:\cpp_spring_week3\project2\tripath.cpp
+	<cmath>
+	"TriPath.h"
+
