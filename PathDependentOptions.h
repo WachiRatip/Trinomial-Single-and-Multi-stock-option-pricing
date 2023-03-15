@@ -17,7 +17,7 @@ for the C++ Programming with Applications in Finance module.
 class PathDependentOptions{
 
    public:
-        virtual double Payoff(double *prices, int N){return 0.0;}
+        virtual double Payoff(double* /*prices*/, int /*N*/){return 0.0;}
         double PriceByExpectation (TriPath Model);
 
 };
