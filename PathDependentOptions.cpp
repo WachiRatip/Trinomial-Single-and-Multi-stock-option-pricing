@@ -20,8 +20,8 @@ double PathDependentOptions::PriceByExpectation(TriPath Model){
 
     //Mutable path and prices.
     int N = Model.Get_N();
-    int path[N] = {0};
-    double prices[N] = {0};
+    int* path = new int[N];
+    double* prices = new double[N];
 
     //Get the total number of paths
     int total = pow(3, N);
@@ -40,6 +40,10 @@ double PathDependentOptions::PriceByExpectation(TriPath Model){
         optionPrice += prob*payoff;
     }
 
+    //Deallocate the memory
+    delete[] path;
+    delete[] prices;
+    
     //Return the discounted expected payoff
     //which is E(payoff)/(1+R)^{N}
     return optionPrice/pow(1+Model.Get_r(), N);
